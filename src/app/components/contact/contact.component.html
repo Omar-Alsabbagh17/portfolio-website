@@ -1,0 +1,66 @@
+<!--<section class="sec">-->
+<!--  <div class="container">-->
+<!--    <h2>Contact Me</h2>-->
+<!--    <p>Feel free to reach out to me using the form below:</p>-->
+
+<!--    <form>-->
+<!--      <label for="name">Name:</label>-->
+<!--      <input type="text" id="name" name="name" required>-->
+
+<!--      <label for="email">Email:</label>-->
+<!--      <input type="email" id="email" name="email" required>-->
+
+<!--      <label for="message">Message:</label>-->
+<!--      <textarea id="message" name="message" rows="4" required placeholder="Write something..."></textarea>-->
+
+<!--      <button type="submit">Send Message</button>-->
+<!--    </form>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+<h1 class="text-center text-white mt-3"> Contact Me </h1>
+<div class="container mt-5">
+  <!-- Contact Form -->
+  <h2 id="confirmationMessage" style="display: none">
+    Thank you. Your submission was received. This page will reload shortly.
+  </h2>
+  <form id="contactForm" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <p style="color: lightyellow">Feel free to reach out to me using the form below:</p>
+
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name" formControlName="name" required>
+      @if( contactForm.get("name")?.invalid && contactForm.get("name")?.touched){
+        <small class="badge  bg-danger"> Name is required </small>
+      }
+
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" formControlName="email" required>
+      @if( contactForm.get("email")?.invalid && contactForm.get("email")?.touched){
+        <small class=" badge bg-danger"> Email is invalid </small>
+      }
+    </div>
+
+
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control"  type="text" id="message" name="message" rows="4"
+                placeholder="Write something..." formControlName="messageBody" required></textarea>
+
+      @if( contactForm.get("messageBody")?.invalid && contactForm.get("messageBody")?.touched){
+        <small class="badge bg-danger"> Message can't be empty </small>
+      }
+    </div>
+
+    <button type="submit" class="btn btn-primary"> Submit</button>
+    <div>
+    <small class="badge bg-danger" id="invalidInputMessage" style="display: none"> Invalid inputs </small>
+    </div>
+  </form>
+</div>
+
+

@@ -1,0 +1,17 @@
+
+@import "./assets/css/variables.css";
+
+
+
+
+body {
+  font-size: 20px;
+  background-color: #0f4d3f;
+}
+
+
+
+p {
+  font-family: Playpen Sans, sans-serif;
+  line-height: 1.3;
+}

@@ -1,0 +1,16 @@
+.img-fluid:hover {
+  filter: brightness(90%); /* Adjust the brightness level as needed */
+}
+
+.badge:hover{
+  color: rgb(212, 215, 96) !important;
+}
+
+.xhead-items{
+  color: var(--primary-text-color)
+}
+
+.container{
+  font-family: Playpen Sans, sans-serif;
+}
+
