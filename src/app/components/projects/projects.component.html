@@ -1,0 +1,115 @@
+<div class="container">
+  <h1 class="text-white text-center mb-5"> Some Projects that I worked on </h1>
+  <div class="row bg-white">
+    <div class="col-3 my-3">
+      <div class="list-group">
+        <button type="button" class="list-group-item list-group-item-action" [class.active]="activeButton === 'webDev'" (click)="setActiveButton('webDev')">
+          Web development
+        </button>
+        <button type="button" class="list-group-item list-group-item-action" [class.active]="activeButton === 'os'" (click)="setActiveButton('os')">
+          Operating Systems
+        </button>
+        <button type="button" class="list-group-item list-group-item-action" [class.active]="activeButton === 'embedded'" (click)="setActiveButton('embedded')">
+          Embedded Systems
+        </button>
+        <button type="button" class="list-group-item list-group-item-action" [class.active]="activeButton === 'softwareEngineering'" (click)="setActiveButton('softwareEngineering')">
+          General software engineering
+        </button>
+      </div>
+    </div>
+
+    <div class="col-8 my-3" [hidden]="activeButton !== 'webDev'">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> The code for this website </h5>
+          <p class="card-text"> Used Vanilla JS, Angular, and Bootstrap </p>
+          <a href="https://github.com/Omar-Alsabbagh17/portfolio-website" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+            Link to the Github Repo</a>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> Website for selling books and office items  </h5>
+          <p class="card-text"> Built using Java Spring framework for backend and Angular framework for frontend </p>
+          <a href="https://github.com/Omar-Alsabbagh17/E-commerece-website" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+            Link to the Github Repo</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-8 my-3" [hidden]="activeButton !== 'os'">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> Command Line interpreter  </h5>
+          <p class="card-text"> implemented a shell-like command line interpreter using C programming language,
+            with support for I/O redirection, pipelines, and directory stack using C Programming Language</p>
+          <a href="https://github.com/Omar-Alsabbagh17/Systems_Programming1-Simple_Shell" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+            Link to the Github Repo</a>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> Multithreading System implementation  </h5>
+          <p class="card-text"> worked with a partner to implement a user-level thread API that encompasses a task scheduler, preemption support, and semaphore handling. </p>
+          <a href="https://github.com/sreshtigoel/ecs150_p2" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+            Link to the Github Repo</a>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> A basic Linux FileSystem  </h5>
+          <p class="card-text"> Designed a basic Linux filesystem using C programming language </p>
+          <a href="https://github.com/sreshtigoel/ecs150_p2" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+            Link to the Github Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-8 my-3" [hidden]="activeButton !== 'embedded'">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> Wrote hardware peripheral drivers for STM32F411 Microcontroller.</h5>
+          <p class="card-text"> •	Leveraged  C programming language to create robust and efficient drivers,
+            ensuring seamless communication between the microcontroller and external hardware components.
+          </p>
+          <p> •	Wrote drivers for peripherals like GPIO, UART/SPI/I2C, HC-05/HC-06, PWM, ADC/DAC, and timers,
+            exhibiting a comprehensive grasp of interfacing techniques and protocols crucial for microcontroller applications.
+          </p>
+
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> Website for selling books and office items  </h5>
+          <p class="card-text"> Built using Java Spring framework for backend and Angular framework for frontend </p>
+          <a href="https://github.com/Omar-Alsabbagh17/E-commerece-website" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+            Link to the Github Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-8 my-3" [hidden]="activeButton !== 'softwareEngineering'">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> The code for this website </h5>
+          <p class="card-text"> Used Vanilla JS, Angular, and Bootstrap </p>
+          <a href="https://github.com/Omar-Alsabbagh17/portfolio-website" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+            Link to the Github Repo</a>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> Website for selling books and office items  </h5>
+          <p class="card-text"> Built using Java Spring framework for backend and Angular framework for frontend </p>
+          <a href="https://github.com/Omar-Alsabbagh17/E-commerece-website" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+            Link to the Github Repo</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</div>
