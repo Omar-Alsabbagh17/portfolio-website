@@ -34,9 +34,19 @@ export class NavBarComponent implements OnInit{
 
   onButtonClick(section:string|null ){
     if (section){
-      // @ts-ignore
-      document.getElementById(section).scrollIntoView({behavior: "smooth", block: 'center', inline:'center'});
-
+      if (section === "home"){
+        let element = document.getElementById(section);
+        scrollTo({
+                      // @ts-ignore
+                      top: element.clientHeight / 2,
+                      // @ts-ignore
+                      left: element.clientWidth / 2,
+                      behavior: "smooth"
+        });
+      } else {
+        // @ts-ignore
+        document.getElementById(section).scrollIntoView({behavior: "smooth", block: 'center', inline: 'center'});
+      }
     }
 
   }

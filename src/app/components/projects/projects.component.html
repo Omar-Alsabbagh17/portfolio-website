@@ -2,6 +2,7 @@
   <h1 class="text-white text-center mb-5"> Some Projects that I worked on </h1>
   <div class="row bg-white">
     <div class="col-3 my-3">
+      <h2 class="mb-2"> Select a category </h2>
       <div class="list-group">
         <button type="button" class="list-group-item list-group-item-action" [class.active]="activeButton === 'webDev'" (click)="setActiveButton('webDev')">
           Web development
@@ -19,7 +20,7 @@
     </div>
 
     <div class="col-8 my-3" [hidden]="activeButton !== 'webDev'">
-      <div class="card">
+      <div class="card border-info">
         <div class="card-body">
           <h5 class="card-title fw-bolder"> The code for this website </h5>
           <p class="card-text"> Used Vanilla JS, Angular, and Bootstrap </p>
@@ -27,7 +28,7 @@
             Link to the Github Repo</a>
         </div>
       </div>
-      <div class="card mt-3">
+      <div class="card mt-3 border-danger">
         <div class="card-body">
           <h5 class="card-title fw-bolder"> Website for selling books and office items  </h5>
           <p class="card-text"> Built using Java Spring framework for backend and Angular framework for frontend </p>
@@ -37,9 +38,10 @@
       </div>
     </div>
 
+    <!--  === Operating Systems  ===================   -->
 
     <div class="col-8 my-3" [hidden]="activeButton !== 'os'">
-      <div class="card">
+      <div class="card border-info">
         <div class="card-body">
           <h5 class="card-title fw-bolder"> Command Line interpreter  </h5>
           <p class="card-text"> implemented a shell-like command line interpreter using C programming language,
@@ -48,7 +50,7 @@
             Link to the Github Repo</a>
         </div>
       </div>
-      <div class="card mt-3">
+      <div class="card mt-3 border-danger">
         <div class="card-body">
           <h5 class="card-title fw-bolder"> Multithreading System implementation  </h5>
           <p class="card-text"> worked with a partner to implement a user-level thread API that encompasses a task scheduler, preemption support, and semaphore handling. </p>
@@ -56,59 +58,132 @@
             Link to the Github Repo</a>
         </div>
       </div>
-      <div class="card mt-3">
+      <div class="card mt-3 border-info">
         <div class="card-body">
           <h5 class="card-title fw-bolder"> A basic Linux FileSystem  </h5>
           <p class="card-text"> Designed a basic Linux filesystem using C programming language </p>
-          <a href="https://github.com/sreshtigoel/ecs150_p2" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+          <a href="https://github.com/Omar-Alsabbagh17/System_Programming3-Filesystem" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+            Link to the Github Repo</a>
+        </div>
+      </div>
+      <div class="card mt-3 border-danger">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> A basic Compiler implementation using Rust  </h5>
+          <p class="card-text">•	Learned about  Lexical Syntax and semantic analysis, Symbol table , tokenizer, parser, and Code generation </p>
+          <a href="https://github.com/Omar-Alsabbagh17/Compiler-implemenation-using-rust" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
             Link to the Github Repo</a>
         </div>
       </div>
     </div>
+    <!--  === Embedded Systems  ===================   -->
 
     <div class="col-8 my-3" [hidden]="activeButton !== 'embedded'">
-      <div class="card">
+      <div class="card border-info">
         <div class="card-body">
           <h5 class="card-title fw-bolder"> Wrote hardware peripheral drivers for STM32F411 Microcontroller.</h5>
-          <p class="card-text"> •	Leveraged  C programming language to create robust and efficient drivers,
+          <p>
+            •	Leveraged  C programming language to create robust and efficient drivers,
             ensuring seamless communication between the microcontroller and external hardware components.
           </p>
-          <p> •	Wrote drivers for peripherals like GPIO, UART/SPI/I2C, HC-05/HC-06, PWM, ADC/DAC, and timers,
+          <p>
+            •	Wrote drivers for peripherals like GPIO, UART/SPI/I2C, HC-05/HC-06, PWM, ADC/DAC, and timers,
             exhibiting a comprehensive grasp of interfacing techniques and protocols crucial for microcontroller applications.
           </p>
-
+          <p>
+            •	Implemented interrupt-driven routines, emphasizing responsiveness and real-time
+            processing capabilities of the STM32F411 microcontroller.
+          </p>
         </div>
       </div>
-      <div class="card mt-3">
+      <div class="card mt-3 border-danger" >
         <div class="card-body">
-          <h5 class="card-title fw-bolder"> Website for selling books and office items  </h5>
-          <p class="card-text"> Built using Java Spring framework for backend and Angular framework for frontend </p>
-          <a href="https://github.com/Omar-Alsabbagh17/E-commerece-website" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
-            Link to the Github Repo</a>
+          <h5 class="card-title fw-bolder"> Smart Home Automation with ESP32, Wi-Fi/Bluetooth.</h5>
+          <p>•	Enable remote control of various home devices (lights, fans, Door, appliances) via android mobile app.</p>
+          <p>•	Temperature monitoring, Smoke detection and send notifications to user for specific events (e.g., intrusion detection).</p>
+          <p>•	Enable scheduled device activation and automation based on sensor input (e.g., automatic lights with motion detection)</p>
+          <p>•	Monitor activity on OLED display and Android app. Measure light intensity with LDR. Power consumption optimization.</p>
         </div>
       </div>
-    </div>
+      <div class="card mt-3 border-info" >
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> GPS-Enabled Wearable for Health Tracking.</h5>
+          <p>•	Developed a GPS-enabled wearable device for health tracking, combining location-based data with vital health metrics.</p>
+          <p>•	Implemented features for monitoring Heart rate (BPM) , temperature, and other health-related metrics, offering users comprehensive insights into their fitness progress.</p>
+          <p>•	Incorporated GPS tech for precise location tracking. Ability to send user’s current location in case of emergency.</p>
+        </div>
+      </div>
+      <div class="card mt-3 border-danger" >
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> Real-Time Clock display.</h5>
+          <p>•	read data from DS1307 via I2C interface. Then Transmitted data to LCD using UART protocol for user visibility.</p>
+          <p>•	Developed device drivers for DS1307 and LCD display, enabling seamless interaction with the microcontroller.</p>
+        </div>
+      </div>
+      <div class="card mt-3 border-info" >
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> Automatic Water planning system </h5>
+          <p>•	Demonstrated expertise in IoT principles, sensor tech, and microcontroller programming for innovative plant care.</p>
+          <p>•	Real-time monitoring and instant alerts for critical moisture levels and watering status.</p>
+        </div>
+      </div>
+      <div class="card mt-3 border-danger" >
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> Handheld Space invaders game</h5>
+          <p>Embedded C programming utilizing ADC, DAC, GPIO buttons, interrupts, and other microcontroller peripherals.</p>
+        </div>
+      </div>
 
+    </div>
+<!--  === General Software ===================   -->
     <div class="col-8 my-3" [hidden]="activeButton !== 'softwareEngineering'">
-      <div class="card">
+      <div class="card border-info">
         <div class="card-body">
-          <h5 class="card-title fw-bolder"> The code for this website </h5>
-          <p class="card-text"> Used Vanilla JS, Angular, and Bootstrap </p>
-          <a href="https://github.com/Omar-Alsabbagh17/portfolio-website" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+          <h5 class="card-title fw-bolder"> Android game built using Java. </h5>
+          <p class="card-text"> The game involved arithmetic challenges, where players solve sums or differences of random numbers, selecting the correct answer from four options to earn points. </p>
+          <a href="https://github.com/Omar-Alsabbagh17/fnum" class="btn btn-success" target="_blank" rel="noopener noreferrer" >Link to the Github Repo</a>
+        </div>
+      </div>
+      <div class="card border-danger mt-3">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> RISC-V Assembly language labs </h5>
+          <p> Some lab assignments implemented using RISC-V </p>
+          <a href="https://github.com/Omar-Alsabbagh17/risc-v-assembly/tree/main" class="btn btn-success" target="_blank" rel="noopener noreferrer" >Link to the Github Repo</a>
+        </div>
+      </div>
+      <div class="card mt-3 border-info">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> Interactive Card Game with GUI </h5>
+          <p>•	Blackjack card game with user interface.</p>
+          <p>•	Support for both Single Player mode against AI opponents and multiplayer mode for human-to-human competition. Multiplayer is played remotely, with real-time data sync utilizing Thingspeak.</p>
+          <a href="https://github.com/Omar-Alsabbagh17/BlackJack_gui" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
             Link to the Github Repo</a>
         </div>
       </div>
-      <div class="card mt-3">
+      <div class="card mt-3 border-danger">
         <div class="card-body">
-          <h5 class="card-title fw-bolder"> Website for selling books and office items  </h5>
-          <p class="card-text"> Built using Java Spring framework for backend and Angular framework for frontend </p>
-          <a href="https://github.com/Omar-Alsabbagh17/E-commerece-website" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
-            Link to the Github Repo</a>
+          <h5 class="card-title fw-bolder"> Machine Learning and Computer Vision </h5>
+          <p> • Competed in Lyft's Motion Prediction for Autonomous Vehicles challenge, leveraging PyTorch for model training and predictions, and Python for data processing and analysis. </p>
+          <p> •	Participated in “Deepfake Detection Challenge”, utilizing PyTorch, NumPy, Pandas, and Matplotlib to develop innovative technologies for detecting manipulated media. </p>
+          <a href="https://www.kaggle.com/omarkxy" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+            Link to my Kaggle Profile </a>
+        </div>
+      </div>
+      <div class="card mt-3 border-info">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> Algorithmic Trading	 </h5>
+          <p>•	Personally coded and deployed trading algorithms in Python, achieving a 7% profit in a short span. Coded all the APIs for seamless  interaction with the exchange market.</p>
+          <p>•	Independently developed and implemented custom backtesting software to ensure optimal algorithm performance prior to deployment.</p>
+        </div>
+      </div>
+      <div class="card mt-3 border-danger">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder"> Covid test result prediction using ML</h5>
+          <p> Worked in a group project to  Classify the outcome of COVID 19 tests using ML models</p>
+          <a href="https://github.com/Omar-Alsabbagh17/ecs171-group2/tree/main" class="btn btn-success" target="_blank" rel="noopener noreferrer" >
+            Link to Github Repo </a>
         </div>
       </div>
     </div>
-
-
 
   </div>
 
