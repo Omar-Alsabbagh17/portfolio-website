@@ -1,9 +1,9 @@
 <div class="container">
   <h1 class="text-white text-center mb-5"> Some Projects that I worked on </h1>
   <div class="row bg-white">
-    <div class="col-3 my-3">
+    <div class="col-sm-3 my-3">
       <h2 class="mb-2"> Select a category </h2>
-      <div class="list-group">
+      <div class="list-group navbar-collapse">
         <button type="button" class="list-group-item list-group-item-action" [class.active]="activeButton === 'webDev'" (click)="setActiveButton('webDev')">
           Web development
         </button>
@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div class="col-8 my-3" [hidden]="activeButton !== 'webDev'">
+    <div class="col-9 my-3" [hidden]="activeButton !== 'webDev'">
       <div class="card border-info">
         <div class="card-body">
           <h5 class="card-title fw-bolder"> The code for this website </h5>
@@ -40,7 +40,7 @@
 
     <!--  === Operating Systems  ===================   -->
 
-    <div class="col-8 my-3" [hidden]="activeButton !== 'os'">
+    <div class="col-9 my-3" [hidden]="activeButton !== 'os'">
       <div class="card border-info">
         <div class="card-body">
           <h5 class="card-title fw-bolder"> Command Line interpreter  </h5>
@@ -77,7 +77,7 @@
     </div>
     <!--  === Embedded Systems  ===================   -->
 
-    <div class="col-8 my-3" [hidden]="activeButton !== 'embedded'">
+    <div class="col-9 my-3" [hidden]="activeButton !== 'embedded'">
       <div class="card border-info">
         <div class="card-body">
           <h5 class="card-title fw-bolder"> Wrote hardware peripheral drivers for STM32F411 Microcontroller.</h5>
@@ -135,7 +135,7 @@
 
     </div>
 <!--  === General Software ===================   -->
-    <div class="col-8 my-3" [hidden]="activeButton !== 'softwareEngineering'">
+    <div class="col-9 my-3" [hidden]="activeButton !== 'softwareEngineering'">
       <div class="card border-info">
         <div class="card-body">
           <h5 class="card-title fw-bolder"> Android game built using Java. </h5>
