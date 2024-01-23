@@ -1,5 +1,5 @@
 # PortfolioWebsite
-this is the code for  my Portfolio website: www.Omar8.com
+This is the code for  my Portfolio website: www.Omar8.com
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
 
