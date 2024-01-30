@@ -12,7 +12,7 @@ export class ProjectsComponent {
   constructor() {
 
   }
-  activeButton: string = 'webDev';
+  activeButton: string = 'os';
 
   setActiveButton(button: string) {
     this.activeButton = button;
